@@ -1,11 +1,15 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #c2cee7;
+
 }
 
 .container {
-    /* background-color: #c2cee7; Z*/
-    background-image: url(../img/moroccan-flower.png);
+width: 90%;
+    margin: 0 auto;
+    
+/*    background-image: url(../img/moroccan-flower.png); */
 /*    background-repeat: repeat-x;*/
 /*    background-position: center center;*/
 /*    background-image:linear-gradient(red,blue);*/
@@ -36,7 +40,10 @@ li {
     padding-right: 10%;
 }
 li:hover {
-/*    background-color: yellow;*/
+/*
+    background-color: yellow;
+    transition: 2s;
+*/
 }
 
 a:link {
@@ -47,6 +54,7 @@ a:visited {
 }
 a:hover {
     color: ghostwhite;
+    transition: .5s;
 }
 
 nav {
@@ -56,6 +64,10 @@ nav {
     border: 10px #585d7a solid;
     box-sizing: border-box;
 }
+
+.albumtop {
+    padding-bottom: 5%;
+}
 .black {
 /*    border: 5px black dashed;*/
 }
@@ -64,16 +76,81 @@ nav {
 /*    border: 1px red solid;*/
 }
 
-.left {
+.image {
     width: 40%;
     display: inline-block;
+/*    padding-left: 10%;*/
+    text-align: center;
+
 }
-.right {
+
+.inwards {
+    padding-left: 7%;
+}
+.text {
     width: 40%;
     display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 6%;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+.right p {
+    vertical-align: middle;
+    
 }
 
+.poster {
+    transform: rotate(45deg);
+    animation-name: movement;
+    animation-duration:5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;    
+}
+video {
+    width: 98%;
+    padding-left: 20%;
+}
 
+.form {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+table {
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+p {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer {
+     margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+    background-color:#7f8aca;
+}
+.down {
+    padding-top: 2%;
+}
+
+@keyframes movement{
+    0%, 100% {
+        transform: translate(0,0);
+    }
+    50% {
+       transform: translate(400px,0);
+    }
+}
 
 @media all and (min-width:320px) and (max-width: 780px) {
     .container{
